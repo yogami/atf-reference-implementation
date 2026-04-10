@@ -66,8 +66,8 @@ VERA defines 5 enforcement pillars every agent must satisfy. This repo maps thos
 
 | Service | Description | Stack | Tests |
 |:--------|:-----------|:------|:------|
-| [agent-trust-verifier](https://github.com/berlinailabs/agent-trust-verifier) | DID:web resolution, Verifiable Credential issuance/verification (JWT-VC), trust score tracking | Next.js, Prisma, PostgreSQL | Vitest + Playwright |
-| [agent-trust-protocol](https://github.com/berlinailabs/agent-trust-protocol) | Reputation scoring, compliance tracking, trust dashboard, **VERA trust tiers & promotion gates** | Next.js, Supabase | Vitest + Playwright |
+| [agent-trust-verifier](https://github.com/yogami/agent-trust-verifier) | DID:web resolution, Verifiable Credential issuance/verification (JWT-VC), trust score tracking | Next.js, Prisma, PostgreSQL | Vitest + Playwright |
+| [agent-trust-protocol](https://github.com/yogami/agent-trust-protocol) | Reputation scoring, compliance tracking, trust dashboard, **VERA trust tiers & promotion gates** | Next.js, Supabase | Vitest + Playwright |
 
 **VERA Requirements Covered:** Unique Identifier ✅ · Credential Binding ✅ · Ownership Chain ✅ · Purpose Declaration ✅ · Capability Manifest 🟡
 
@@ -79,8 +79,8 @@ VERA defines 5 enforcement pillars every agent must satisfy. This repo maps thos
 
 | Service | Description | Stack | Tests |
 |:--------|:-----------|:------|:------|
-| [pdp-protocol](https://github.com/berlinailabs/pdp-protocol) (Veracity Core) | Cryptographic Proof of Execution — Ed25519 signed execution records, hash-chain linking, Solana anchoring, PDP Decision Tokens | Node.js, Express | Vitest + Playwright |
-| [agent-chain-anchor](https://github.com/berlinailabs/agent-chain-anchor) | Chain-agnostic blockchain anchoring for PoE proofs, trust score snapshots, and decision audit logs | Next.js | Vitest + Playwright |
+| [pdp-protocol](https://github.com/yogami/pdp-protocol) (Veracity Core) | Cryptographic Proof of Execution — Ed25519 signed execution records, hash-chain linking, Solana anchoring, PDP Decision Tokens | Node.js, Express | Vitest + Playwright |
+| [agent-chain-anchor](https://github.com/yogami/agent-chain-anchor) | Chain-agnostic blockchain anchoring for PoE proofs, trust score snapshots, and decision audit logs | Next.js | Vitest + Playwright |
 
 **VERA Requirements Covered:** Structured Logging ✅ · Action Attribution ✅ · Behavioral Baseline ✅ · Anomaly Detection ✅ · Explainability ✅
 
@@ -94,8 +94,8 @@ VERA defines 5 enforcement pillars every agent must satisfy. This repo maps thos
 
 | Service | Description | Stack | Tests |
 |:--------|:-----------|:------|:------|
-| [convo-guard-ai](https://github.com/berlinailabs/convo-guard-ai) | Sub-20ms ONNX inference firewall — prompt injection defense, PII detection, API key interception, EU AI Act compliance trails (Articles 11, 12, 73) | Next.js, ONNX Runtime | 69/69 E2E |
-| [agent-fairness-auditor](https://github.com/berlinailabs/agent-fairness-auditor) | Bias detection, immutable audit logging, compliance dashboard | Next.js, Prisma, PostgreSQL | Vitest + Playwright |
+| [convo-guard-ai](https://github.com/yogami/convo-guard-ai) | Sub-20ms ONNX inference firewall — prompt injection defense, PII detection, API key interception, EU AI Act compliance trails (Articles 11, 12, 73) | Next.js, ONNX Runtime | 69/69 E2E |
+| [agent-fairness-auditor](https://github.com/yogami/agent-fairness-auditor) | Bias detection, immutable audit logging, compliance dashboard | Next.js, Prisma, PostgreSQL | Vitest + Playwright |
 
 **VERA Requirements Covered:** Schema Validation ✅ · Injection Prevention ✅ · PII/PHI Protection ✅ · Output Validation ✅ · Data Lineage ✅
 
@@ -109,9 +109,9 @@ VERA defines 5 enforcement pillars every agent must satisfy. This repo maps thos
 
 | Service | Description | Stack | Tests |
 |:--------|:-----------|:------|:------|
-| [agent-trust-protocol/lib/vera](https://github.com/berlinailabs/agent-trust-protocol) | Policy-as-code segmentation engine — resource ACLs with glob matching, rate limiting, transaction limits, A2A communication controls, blast radius containment | TypeScript | 33 unit tests |
-| [agent-deadline-enforcer](https://github.com/berlinailabs/agent-deadline-enforcer) | SLA contract registration, automated breach detection and enforcement | Next.js, Prisma, PostgreSQL | Vitest + Playwright |
-| [agent-semantic-aligner](https://github.com/berlinailabs/agent-semantic-aligner) | Vocabulary translation middleware — resolves ontology gaps between agents communicating across domains | Next.js, OpenAI, Prisma | Vitest + Playwright |
+| [agent-trust-protocol/lib/vera](https://github.com/yogami/agent-trust-protocol) | Policy-as-code segmentation engine — resource ACLs with glob matching, rate limiting, transaction limits, A2A communication controls, blast radius containment | TypeScript | 33 unit tests |
+| [agent-deadline-enforcer](https://github.com/yogami/agent-deadline-enforcer) | SLA contract registration, automated breach detection and enforcement | Next.js, Prisma, PostgreSQL | Vitest + Playwright |
+| [agent-semantic-aligner](https://github.com/yogami/agent-semantic-aligner) | Vocabulary translation middleware — resolves ontology gaps between agents communicating across domains | Next.js, OpenAI, Prisma | Vitest + Playwright |
 
 **VERA Requirements Covered:** Resource Allowlist ✅ · Action Boundaries ✅ · Rate Limiting ✅ · Transaction Limits ✅ · Blast Radius Containment ✅
 
@@ -123,8 +123,8 @@ VERA defines 5 enforcement pillars every agent must satisfy. This repo maps thos
 
 | Service | Description | Stack | Tests |
 |:--------|:-----------|:------|:------|
-| [agent-pentest](https://github.com/berlinailabs/agent-pentest) | 41 automated adversarial attack vectors across 4 categories (injection, exfiltration, jailbreak, safety bypass), Safety Score grading (A-F), CI/CD integration | TypeScript CLI | Vitest |
-| [agent-trust-protocol/lib/vera](https://github.com/berlinailabs/agent-trust-protocol) | Circuit breaker (closed→open→half-open recovery), kill switch (with auto-resume), auto-containment on critical incidents | TypeScript | 33 unit tests |
+| [agent-pentest](https://github.com/yogami/agent-pentest) | 41 automated adversarial attack vectors across 4 categories (injection, exfiltration, jailbreak, safety bypass), Safety Score grading (A-F), CI/CD integration | TypeScript CLI | Vitest |
+| [agent-trust-protocol/lib/vera](https://github.com/yogami/agent-trust-protocol) | Circuit breaker (closed→open→half-open recovery), kill switch (with auto-resume), auto-containment on critical incidents | TypeScript | 33 unit tests |
 
 **VERA Requirements Covered:** Vulnerability Assessment ✅ · Penetration Testing ✅ · Adversarial Testing ✅ · Circuit Breakers ✅ · Kill Switches ✅
 
@@ -136,8 +136,8 @@ VERA defines 5 enforcement pillars every agent must satisfy. This repo maps thos
 
 | Service | Description | Role |
 |:--------|:-----------|:-----|
-| [spy-agent-openclaw](https://github.com/berlinailabs/spy-agent-openclaw) | Sovereign execution node — PRISM Level 4 security, staking/slashing vault, zero-trust middleware | Runtime enforcement |
-| [agent-ops-mission-control](https://github.com/berlinailabs/agent-ops-mission-control) | Enterprise agent discovery platform — vendor-neutral search, trust score visualization, fleet management | Operator dashboard |
+| [spy-agent-openclaw](https://github.com/yogami/spy-agent-openclaw) | Sovereign execution node — PRISM Level 4 security, staking/slashing vault, zero-trust middleware | Runtime enforcement |
+| [agent-ops-mission-control](https://github.com/yogami/agent-ops-mission-control) | Enterprise agent discovery platform — vendor-neutral search, trust score visualization, fleet management | Operator dashboard |
 
 ---
 
@@ -171,27 +171,27 @@ This is a facade repository — to run individual services, clone them directly:
 
 ```bash
 # Identity
-git clone https://github.com/berlinailabs/agent-trust-verifier.git
-git clone https://github.com/berlinailabs/agent-trust-protocol.git
+git clone https://github.com/yogami/agent-trust-verifier.git
+git clone https://github.com/yogami/agent-trust-protocol.git
 
 # Proof of Execution
-git clone https://github.com/berlinailabs/pdp-protocol.git
-git clone https://github.com/berlinailabs/agent-chain-anchor.git
+git clone https://github.com/yogami/pdp-protocol.git
+git clone https://github.com/yogami/agent-chain-anchor.git
 
 # Data Sovereignty
-git clone https://github.com/berlinailabs/convo-guard-ai.git
-git clone https://github.com/berlinailabs/agent-fairness-auditor.git
+git clone https://github.com/yogami/convo-guard-ai.git
+git clone https://github.com/yogami/agent-fairness-auditor.git
 
 # Segmentation
-git clone https://github.com/berlinailabs/agent-deadline-enforcer.git
-git clone https://github.com/berlinailabs/agent-semantic-aligner.git
+git clone https://github.com/yogami/agent-deadline-enforcer.git
+git clone https://github.com/yogami/agent-semantic-aligner.git
 
 # Containment
-git clone https://github.com/berlinailabs/agent-pentest.git
+git clone https://github.com/yogami/agent-pentest.git
 
 # Infrastructure
-git clone https://github.com/berlinailabs/spy-agent-openclaw.git
-git clone https://github.com/berlinailabs/agent-ops-mission-control.git
+git clone https://github.com/yogami/spy-agent-openclaw.git
+git clone https://github.com/yogami/agent-ops-mission-control.git
 ```
 
 Each service has its own `VERA_MAPPING.md` documenting exactly which VERA requirements it satisfies.
@@ -222,5 +222,5 @@ MIT — Build freely.
 ---
 
 <p align="center">
-  <strong>Berlin AI Labs</strong> · <a href="https://berlinailabs.de">berlinailabs.de</a> · <a href="https://github.com/berlinailabs">github.com/berlinailabs</a>
+  <strong>Berlin AI Labs</strong> · <a href="https://berlinailabs.de">berlinailabs.de</a> · <a href="https://github.com/yogami">github.com/yogami</a>
 </p>

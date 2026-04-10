@@ -11,7 +11,7 @@ export type VERAPillar = 'identity' | 'proof_of_execution' | 'data_sovereignty' 
 export interface ServiceEntry {
     /** Human-readable name */
     name: string;
-    /** GitHub repo name (under berlinailabs/) */
+    /** GitHub repo name (under yogami/) */
     repo: string;
     /** Full GitHub URL */
     url: string;
@@ -34,7 +34,7 @@ export const SERVICE_REGISTRY: ServiceEntry[] = [
     {
         name: 'Agent Trust Verifier',
         repo: 'agent-trust-verifier',
-        url: 'https://github.com/berlinailabs/agent-trust-verifier',
+        url: 'https://github.com/yogami/agent-trust-verifier',
         pillar: 'identity',
         description: 'DID:web resolution, Verifiable Credential issuance/verification (JWT-VC), trust score tracking',
         hasVERAMapping: true,
@@ -43,7 +43,7 @@ export const SERVICE_REGISTRY: ServiceEntry[] = [
     {
         name: 'Agent Trust Protocol',
         repo: 'agent-trust-protocol',
-        url: 'https://github.com/berlinailabs/agent-trust-protocol',
+        url: 'https://github.com/yogami/agent-trust-protocol',
         pillar: 'identity',
         secondaryPillars: ['segmentation', 'containment'],
         description: 'Reputation scoring, compliance tracking, VERA maturity model & promotion gates, segmentation engine, circuit breaker',
@@ -56,7 +56,7 @@ export const SERVICE_REGISTRY: ServiceEntry[] = [
     {
         name: 'Veracity Core (PDP Protocol)',
         repo: 'pdp-protocol',
-        url: 'https://github.com/berlinailabs/pdp-protocol',
+        url: 'https://github.com/yogami/pdp-protocol',
         pillar: 'proof_of_execution',
         description: 'Cryptographic Proof of Execution — Ed25519 signed execution records, hash-chain linking, Solana anchoring',
         productionUrl: 'https://pdp-protocol-production.up.railway.app',
@@ -66,7 +66,7 @@ export const SERVICE_REGISTRY: ServiceEntry[] = [
     {
         name: 'Agent Chain Anchor',
         repo: 'agent-chain-anchor',
-        url: 'https://github.com/berlinailabs/agent-chain-anchor',
+        url: 'https://github.com/yogami/agent-chain-anchor',
         pillar: 'proof_of_execution',
         description: 'Chain-agnostic blockchain anchoring for ZK-SLA proofs, trust score snapshots, and decision audit logs',
         hasVERAMapping: true,
@@ -77,7 +77,7 @@ export const SERVICE_REGISTRY: ServiceEntry[] = [
     {
         name: 'ConvoGuard AI',
         repo: 'convo-guard-ai',
-        url: 'https://github.com/berlinailabs/convo-guard-ai',
+        url: 'https://github.com/yogami/convo-guard-ai',
         pillar: 'data_sovereignty',
         description: 'Sub-20ms ONNX inference firewall — prompt injection defense, PII detection, EU AI Act compliance trails',
         productionUrl: 'https://convo-guard-ai-production.up.railway.app',
@@ -87,7 +87,7 @@ export const SERVICE_REGISTRY: ServiceEntry[] = [
     {
         name: 'Agent Fairness Auditor',
         repo: 'agent-fairness-auditor',
-        url: 'https://github.com/berlinailabs/agent-fairness-auditor',
+        url: 'https://github.com/yogami/agent-fairness-auditor',
         pillar: 'data_sovereignty',
         description: 'Bias detection, immutable audit logging, compliance dashboard',
         hasVERAMapping: true,
@@ -98,7 +98,7 @@ export const SERVICE_REGISTRY: ServiceEntry[] = [
     {
         name: 'Agent Deadline Enforcer',
         repo: 'agent-deadline-enforcer',
-        url: 'https://github.com/berlinailabs/agent-deadline-enforcer',
+        url: 'https://github.com/yogami/agent-deadline-enforcer',
         pillar: 'segmentation',
         description: 'SLA contract registration, automated breach detection and enforcement',
         hasVERAMapping: true,
@@ -107,7 +107,7 @@ export const SERVICE_REGISTRY: ServiceEntry[] = [
     {
         name: 'Agent Semantic Aligner',
         repo: 'agent-semantic-aligner',
-        url: 'https://github.com/berlinailabs/agent-semantic-aligner',
+        url: 'https://github.com/yogami/agent-semantic-aligner',
         pillar: 'segmentation',
         description: 'Vocabulary translation middleware — resolves ontology gaps between agents',
         hasVERAMapping: true,
@@ -118,7 +118,7 @@ export const SERVICE_REGISTRY: ServiceEntry[] = [
     {
         name: 'Agent Pentest',
         repo: 'agent-pentest',
-        url: 'https://github.com/berlinailabs/agent-pentest',
+        url: 'https://github.com/yogami/agent-pentest',
         pillar: 'containment',
         description: '41 automated adversarial attack vectors, Safety Score grading (A-F), CI/CD integration',
         hasVERAMapping: true,
@@ -129,7 +129,7 @@ export const SERVICE_REGISTRY: ServiceEntry[] = [
     {
         name: 'OpenClaw Node (The Operator)',
         repo: 'spy-agent-openclaw',
-        url: 'https://github.com/berlinailabs/spy-agent-openclaw',
+        url: 'https://github.com/yogami/spy-agent-openclaw',
         pillar: 'infrastructure',
         description: 'Sovereign execution node — PRISM Level 4 security, staking/slashing vault, zero-trust middleware',
         hasVERAMapping: false,
@@ -138,7 +138,7 @@ export const SERVICE_REGISTRY: ServiceEntry[] = [
     {
         name: 'AgentOps Mission Control',
         repo: 'agent-ops-mission-control',
-        url: 'https://github.com/berlinailabs/agent-ops-mission-control',
+        url: 'https://github.com/yogami/agent-ops-mission-control',
         pillar: 'infrastructure',
         description: 'Enterprise agent discovery platform — vendor-neutral search, trust score visualization',
         hasVERAMapping: false,
@@ -147,7 +147,7 @@ export const SERVICE_REGISTRY: ServiceEntry[] = [
     {
         name: 'Trust Score & ConvoGuard Demo',
         repo: 'TrustScoreAndConvoGuardDemoWebsite',
-        url: 'https://github.com/berlinailabs/TrustScoreAndConvoGuardDemoWebsite',
+        url: 'https://github.com/yogami/TrustScoreAndConvoGuardDemoWebsite',
         pillar: 'infrastructure',
         description: 'Interactive demo website — Trust Score dashboard + ConvoGuard API console',
         hasVERAMapping: false,

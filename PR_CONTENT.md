@@ -4,7 +4,7 @@ The following open-source implementation provides working, deployed services for
 
 ## Berlin AI Labs — VERA Reference Implementation
 
-**Repository:** https://github.com/berlinailabs/vera-reference-implementation
+**Repository:** https://github.com/yogami/vera-reference-implementation
 
 A complete enforcement layer for the Verifiable Enforcement for Runtime Agents, consisting of 12 independently deployed services mapped to all 5 VERA elements. All services are open source (MIT), tested, and deployed.
 
@@ -12,17 +12,17 @@ A complete enforcement layer for the Verifiable Enforcement for Runtime Agents, 
 
 | VERA Pillar | Service | Repository |
 |:---|:---|:---|
-| **Pillar 1: Identity** | Agent Trust Verifier — DID:web + Verifiable Credentials | [agent-trust-verifier](https://github.com/berlinailabs/agent-trust-verifier) |
-| **Pillar 1: Identity** | Agent Trust Protocol — Reputation scoring + compliance tracking | [agent-trust-protocol](https://github.com/berlinailabs/agent-trust-protocol) |
-| **Pillar 2: Proof of Execution** | Veracity Core — Ed25519 Proof of Execution, Solana anchoring | [pdp-protocol](https://github.com/berlinailabs/pdp-protocol) |
-| **Pillar 2: Proof of Execution** | Agent Chain Anchor — Chain-agnostic blockchain proof anchoring | [agent-chain-anchor](https://github.com/berlinailabs/agent-chain-anchor) |
-| **Pillar 3: Data Sovereignty** | ConvoGuard AI — Sub-20ms ONNX firewall, EU AI Act compliance | [convo-guard-ai](https://github.com/berlinailabs/convo-guard-ai) |
-| **Pillar 3: Data Sovereignty** | Agent Fairness Auditor — Bias detection, audit logging | [agent-fairness-auditor](https://github.com/berlinailabs/agent-fairness-auditor) |
-| **Pillar 4: Segmentation** | VERA Segmentation Engine — Policy-as-code, rate limiting, A2A controls | [agent-trust-protocol](https://github.com/berlinailabs/agent-trust-protocol) |
-| **Pillar 4: Segmentation** | Agent Deadline Enforcer — SLA contract enforcement | [agent-deadline-enforcer](https://github.com/berlinailabs/agent-deadline-enforcer) |
-| **Pillar 4: Segmentation** | Agent Semantic Aligner — Cross-domain vocabulary translation | [agent-semantic-aligner](https://github.com/berlinailabs/agent-semantic-aligner) |
-| **Pillar 5: Containment** | Agent Pentest — 41 adversarial attack vectors, Safety Score (A-F) | [agent-pentest](https://github.com/berlinailabs/agent-pentest) |
-| **Pillar 5: Containment** | VERA Incident Service — Circuit breaker, kill switch, auto-containment | [agent-trust-protocol](https://github.com/berlinailabs/agent-trust-protocol) |
+| **Pillar 1: Identity** | Agent Trust Verifier — DID:web + Verifiable Credentials | [agent-trust-verifier](https://github.com/yogami/agent-trust-verifier) |
+| **Pillar 1: Identity** | Agent Trust Protocol — Reputation scoring + compliance tracking | [agent-trust-protocol](https://github.com/yogami/agent-trust-protocol) |
+| **Pillar 2: Proof of Execution** | Veracity Core — Ed25519 Proof of Execution, Solana anchoring | [pdp-protocol](https://github.com/yogami/pdp-protocol) |
+| **Pillar 2: Proof of Execution** | Agent Chain Anchor — Chain-agnostic blockchain proof anchoring | [agent-chain-anchor](https://github.com/yogami/agent-chain-anchor) |
+| **Pillar 3: Data Sovereignty** | ConvoGuard AI — Sub-20ms ONNX firewall, EU AI Act compliance | [convo-guard-ai](https://github.com/yogami/convo-guard-ai) |
+| **Pillar 3: Data Sovereignty** | Agent Fairness Auditor — Bias detection, audit logging | [agent-fairness-auditor](https://github.com/yogami/agent-fairness-auditor) |
+| **Pillar 4: Segmentation** | VERA Segmentation Engine — Policy-as-code, rate limiting, A2A controls | [agent-trust-protocol](https://github.com/yogami/agent-trust-protocol) |
+| **Pillar 4: Segmentation** | Agent Deadline Enforcer — SLA contract enforcement | [agent-deadline-enforcer](https://github.com/yogami/agent-deadline-enforcer) |
+| **Pillar 4: Segmentation** | Agent Semantic Aligner — Cross-domain vocabulary translation | [agent-semantic-aligner](https://github.com/yogami/agent-semantic-aligner) |
+| **Pillar 5: Containment** | Agent Pentest — 41 adversarial attack vectors, Safety Score (A-F) | [agent-pentest](https://github.com/yogami/agent-pentest) |
+| **Pillar 5: Containment** | VERA Incident Service — Circuit breaker, kill switch, auto-containment | [agent-trust-protocol](https://github.com/yogami/agent-trust-protocol) |
 
 ### Trust Tier Model
 
@@ -41,7 +41,7 @@ The implementation includes a working Trust Tier Model engine with all 5 Promoti
 The reference implementation includes a contract validation test suite (25 tests) verifying portfolio integrity against the VERA specification.
 
 ```bash
-git clone https://github.com/berlinailabs/vera-reference-implementation.git
+git clone https://github.com/yogami/vera-reference-implementation.git
 cd vera-reference-implementation
 npm install
 npm test

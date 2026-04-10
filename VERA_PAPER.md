@@ -1213,7 +1213,7 @@ VERA builds on and complements existing work across standards bodies, academic r
 ## 12. Getting Started
 
 ```bash
-git clone https://github.com/berlinailabs/vera-reference-implementation.git
+git clone https://github.com/yogami/vera-reference-implementation.git
 cd vera-reference-implementation
 npm install
 npm test  # 25/25 contract validation tests
@@ -1237,7 +1237,7 @@ VERA does not claim to solve the alignment problem, achieve Byzantine fault tole
 
 **Berlin AI Labs** is an AI engineering studio specializing in high-veracity agent infrastructure. We focus on deterministic verification, cryptographic proof of execution, and runtime enforcement for autonomous AI systems.
 
-**Contact:** hello@berlinailabs.de | github.com/berlinailabs
+**Contact:** hello@berlinailabs.de | github.com/yogami
 
 ---
 

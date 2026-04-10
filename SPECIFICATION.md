@@ -6,7 +6,7 @@
 
 Every service in the VERA stack must declare:
 
-1. **GitHub Repository** — Public, accessible at `github.com/berlinailabs/{name}`
+1. **GitHub Repository** — Public, accessible at `github.com/yogami/{name}`
 2. **VERA Pillar Mapping** — Which of the 5 VERA enforcement pillars it implements
 3. **VERA_MAPPING.md** — A file in the repo root documenting compliance
 4. **Test Suite** — Minimum one test framework configured

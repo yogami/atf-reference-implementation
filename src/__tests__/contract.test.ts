@@ -59,7 +59,7 @@ describe('VERA Contract Validation', () => {
 
         it('all services have valid GitHub URLs', () => {
             for (const service of SERVICE_REGISTRY) {
-                expect(service.url).toMatch(/^https:\/\/github\.com\/berlinailabs\//);
+                expect(service.url).toMatch(/^https:\/\/github\.com\/yogami\//);
             }
         });
 
